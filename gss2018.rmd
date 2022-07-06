@@ -55,6 +55,10 @@ First question - Is opinion on the death penalty (CAPPUN) independent of gun own
 
 Is there a difference in years of education (EDUC) between the those who did or did not vote in 2012 (VOTE12)?
 
+$H_N$:The number of years one spends in education does not affect if they will vote.
+
+$H_A$: The number of years one spends in education does have an affect on if they will vote or not. 
+
 ## Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
