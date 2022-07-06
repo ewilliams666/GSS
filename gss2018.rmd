@@ -50,13 +50,39 @@ The variables are each categorical with two levels. The first is CAPPUN Yes/No a
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+barchartGC(~OWNGUN + CAPPUN,data=GSSdata)
+barchartGC(~OWNGUN + CAPPUN,data=GSSdata, type="percent")
+
+```
+
+Based on the graph it seems that most people who are in favor of capital punishment are also gun owners.    
+
 #### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+
+```{r}
+table1 <- xtabs(~OWNGUN + CAPPUN, data=GSSdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+Here we can see that large majority of gun owners are also in favor of capital punishment while those who do not have a gun seem to oppose capital punishment. Therefore it seems likely that gun ownership does in fact play a role in determining if someone is in favor of capital punishment. 
+
 ### Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+Here we have the Chi-fisher test and the Fisher exact test. We can see the p-value from our data from the Chi-fisher test is 0.0202. We can also see that the p-value from the Fisher exact test is 0.01651.Because the p-value is so low from both of our results it is safe to say that we can reject the null hypothesis. 
+
 
 #  Question 2
 
