@@ -83,10 +83,16 @@ Is there a difference in years of education (EDUC) between the those who did or 
 
 Determine if a persons performance on the wordsum test (WORDSUM) is independent of their level of schooling (DEGREE).
 
+$H_N$: One's level of school has no affect on the score of their wordsum test score. 
+
+$H_A$: One's level of school does have an affect on their wordsom test score.
+
+
 ## Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
+Both of our variables here are catergorical so we will be doing a Cat-Cat analysis. This means we will 
 ##Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
